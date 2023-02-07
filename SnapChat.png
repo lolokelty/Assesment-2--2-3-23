@@ -1,0 +1,27 @@
+SOME FACTS:
+As of the Q2 2020, SnapChat had 218 million active users, Worldwide.
+On average, users opened SnapChat over 30 times, everyday in Q2 2020.
+On average, over 180 million users engaged with augmented reality daily in Q2 2020.
+
+OVERVIEW:
+Snapchat caught fire due to its quickly vanishing image feature. 
+They have designed their tech stack with a different approach.
+Instead of choosing the mainstream AWS cloud used by tech giants like Netflix, Reddit, Airbnb, and Spotify, they chose to build their app on top of Google App Engine. 
+Snapchat is said to be using four key products from the cloud services of google. 
+The cloud storage for storing their data, compute engine to retrieve and manage data, App engine for developing and running application, and BigQuery for data analysis. 
+Along with this, they use a suite of machine learning tools to enhance their user experience.
+
+PROGRAMMING LANGUAGES:
+Java, Kotlin, Objective-C, SWift, JavaScript
+
+DATABASE:
+MySQL, DocumentDB, MongoDB. Redis
+
+FRAMEWORK & LIBRARIES:
+Cocoa Touch, Bootstrap, Angular JS, JQuery, React
+
+DEVOPS:
+TerraForm, Jenkins, Github
+
+TOOLS:
+Twilio SendGrid, BigQuery

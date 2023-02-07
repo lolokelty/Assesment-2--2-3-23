@@ -1,0 +1,28 @@
+SOME FACTS:
+As of Q1 2020, Pinterest had 367 million monthly active users Worldwide.
+According to Pinterest, 80% of pinners use Pinterest on mobile.
+72% of Pinners use Pinterest to decide what to buy offline.
+
+OVERVIEW:
+What started as a startup, currently, Pinterest has more than 367 million users worldwide. 
+The company with one of the largest datasets has north of 600 engineers. 
+Their tool stack is so well-designed for their requirements that it organizes and serves a large amount of data.
+They have changed their tool stack multiple times through the course of their journey. 
+Cloud computing and Content Distribution Infrastructure are the most important aspects to understand the technical strategy of Pinterest. 
+Pinterests cloud strategy aims at documenting its strategic approach to its foundational cloud infrastructure. 
+This will help them stay cost-effective and highly available in the long term.
+
+PROGRAMMING LANGUAGES:
+Python, JavaScript, Java, Go, Objective-C, React
+
+DATABASE:
+MySQL, Redis, HBAse, RocksDB
+
+FRAMEWORKS & LIBRARIES:
+NodeJS, Django, React, Jest
+
+DEVOPS:
+Docker, Amazon ECR
+
+TOOL:
+Kafka, Elastic Search, Presto, Nimble Droid, Hadoop

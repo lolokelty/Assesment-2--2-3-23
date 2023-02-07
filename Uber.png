@@ -1,0 +1,40 @@
+SOME FACTS:
+in Q1 2020, Uber had 103 Million monthly active users Worldwide,
+in the frist quarter 2020, Gross Bookings grew to $15.8 Billion. it is used in 63 countries and,
+780 cities+ which includes other ser4vices such as Uber Eats.\
+
+OVERVIEW:
+Millions of people around the world use Uber every day. 
+The services provided by Uber range from cab services, ride-sharing to food delivery. 
+Ubers tech stack has evolved through many technological changes. 
+here were some key decisions that took place in the process of choosing and updating the tech stack. These decisions have a big role in ubers history and where it stands today.
+In 2012, The initial tool stack of Uber was pretty simple. 
+They used to work on backend with Python, MySQL, and Mongo with dispatch systems built on Node.js and Redis. 
+They were using Objective-C and Java to power the iPhone and Android apps respectively and Backbone.js for their websites.
+Uber used to follow a monolithic architecture built for a single offering in a single city. 
+But as they expanded rapidly, this started becoming complex and they had to scale their technology. 
+In 2015, they decided to break up the monolith into multiple codebases to form a service-oriented architecture (SOA) i.e. Micro Service Architecture. 
+This decision helped uber with increasing the discoverability of their services.
+They started encountering difficulties like inefficient data replication and issues with table corruption with their Postgres architecture. 
+It could not replicate data between databases running different versions. This increased the risks to upgrade and complexity of the app.
+Thats when Uber decided to switch to MySQL in 2016. 
+InnoDB storage engine can do replication at the statement level which reduced the risks and works between versions. 
+Also, the caching and connection pooling capabilities of MySQL showed better performance for their use cases.
+
+PROGRAMMING LANGUAGES:
+python, JavaScript, Java, Go, Objective-C. Swift
+
+DATABASES:
+MySQL, Redis, PostgreSQL, Riak, MongoDB, Cassandra
+
+FRAMEWORKS $ LIBRARIES:
+NodeJs, ExpressJS, React, Jquery, Backbone.JavaScript
+
+DEVOPS:
+Terraform, Jenkins, Packer, Puppet, Nagios
+
+TOOLS:
+HAProxy, Kafka, Elastic Search, Twilo Send Grid, Apache Spark
+
+
+
