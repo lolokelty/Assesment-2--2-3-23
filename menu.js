@@ -122,7 +122,7 @@ let foodArr = {
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(callback(tags['food, meat, dough, minerals']), 'food')
 
 
 
@@ -165,7 +165,7 @@ let foodArr = {
     Return the filtered array from the entire function
 */
 
-//CODE HERE
+
 
 
 /*

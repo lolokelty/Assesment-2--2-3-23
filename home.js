@@ -124,7 +124,7 @@ const deals = [{
     to replace the 15 with a 10.
 */
 const title = '15% Off!'
-console.log(deals.replace('15% Off!', '10% Off!'))
+console.log(title.replace('15% Off!', '10% Off!'))
 
 
 
