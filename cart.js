@@ -87,8 +87,8 @@ console.log(calcFinalPrice(5, 26.97, .06))
 */
 
 /*
-    my bag will have 4 properties, bags, name, items, and food. 
-    I choose these data types because this is what Logan will have purchased and how much he purchased, item specificly.
+    my bag will have 4 properties, name, items, cost, and Food.
+    I choose these data types because this is what the name of my customer as well as the cost and items their purchases.
 
 */
 
@@ -97,13 +97,28 @@ console.log(calcFinalPrice(5, 26.97, .06))
     guidelines.
 */
 
-
-// Setup
-var customerBag = {
-    "name": "Logan",
-    "bags": 1,
-    "items": 3,
-    "food": ["Carrots", "cream Cheese", "yogurt"]
-};
-
-console.log(customerBag)
+const customers = [{
+        name: 'Logan',
+        Items: 2,
+        Food: ['Carrots', 'Yogurt', ],
+        Cost: 7.36,
+    },
+    {
+        name: 'Kirito',
+        Items: 1,
+        Food: ['Chicken'],
+        Cost: 5.66,
+    },
+    {
+        name: 'Mai',
+        Items: 4,
+        Food: ['Crackers', 'Soup', 'Yogurt', 'Cheese'],
+        Cost: 35.68,
+    },
+    {
+        name: 'ChiChi',
+        Items: 5,
+        Food: ['Pasta', 'Soda', 'Celery', 'Yogurt', 'Bacon'],
+        Cost: 80.99
+    }
+]
