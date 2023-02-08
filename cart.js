@@ -87,7 +87,8 @@ console.log(calcFinalPrice(5, 26.97, .06))
 */
 
 /*
-    TEXT ANSWER HERE
+    my bag will have 4 properties, bags, name, items, and food. 
+    I choose these data types because this is what Logan will have purchased and how much he purchased, item specificly.
 
 */
 
@@ -95,3 +96,14 @@ console.log(calcFinalPrice(5, 26.97, .06))
     Now, create a customer object following your own
     guidelines.
 */
+
+
+// Setup
+var customerBag = {
+    "name": "Logan",
+    "bags": 1,
+    "items": 3,
+    "food": ["Carrots", "cream Cheese", "yogurt"]
+};
+
+console.log(customerBag)
