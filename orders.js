@@ -60,19 +60,21 @@ console.log(`The order for customer ${customerId && items} is now ${newStatus}`)
     ordered at: 7:03 PM
     customer: 575
 */
-let items = 'Pizza, bread, soda'
-let orderTime = '7:03'
-let customerId = 575
-let newStatus = 'cooking'
+// let items = 'Pizza, bread, soda'
+// let orderTime = '7:03'
+// let customerId = 575
+// let newStatus = 'cooking'
 
 class firstTicket {
     constructor(items, orderTime, customerId) {
         this.items = items
         this.orderTime = orderTime
         this.customerId = customerId
+        this.status = 'queued'
     }
     updateStatus(newStatus) {
         this.status = newStatus
+        console.log(`The order for the customer ${this.customerId}, is now ${this.Status}`)
     }
 }
 
@@ -83,5 +85,6 @@ class firstTicket {
     'cooking'
 */
 
-const status = new firstTicket('cooking')
-console.log(`The order for the customer ${customerId}, which is ${items}, is now ${newStatus}`)
+let testTicket = new Ticket('bag', '12pm', 123)
+testTicket.updateStatus('hungry')
+console.log(testTicket.updateStatus)

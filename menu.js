@@ -30,13 +30,13 @@
     'kids'
 */
 
-let Pizza = {
-    name: 'Meaty Pizza',
-    price: '$100',
-    category: 'Meat',
-    popularity: '8.7',
-    rating: '10.6',
-    tags: ['meaty, yummy, doughy, healthy'],
+const Pizza = {
+    name: 'cheese',
+    price: 100,
+    category: 'entree',
+    popularity: 8.7,
+    rating: 10,
+    tags: ['cheesy, yummy, doughy, Pizza']
 }
 
 
@@ -96,17 +96,47 @@ console.log(category)
     data in some functions that you'll write.
 */
 
-let foodArr = {
-    name: 'Meaty Pizza',
-    price: '$10.99',
-    category: 'pizza',
-    popularity: '9.5',
-    rating: '8.5',
-    tags: ['food, meat, dough, minerals'],
-}
-
-
-
+const foodArr = [{
+        name: 'cheese',
+        price: 100,
+        category: 'entree',
+        popularity: 8.8,
+        rating: 10,
+        tags: ['cheesy, yummy, doughy, Pizza'],
+    },
+    {
+        name: 'apple Pizza',
+        price: 20,
+        category: 'entree',
+        popularity: 8.7,
+        rating: 10,
+        tags: ['loaded, yum, not doughy, super Pizza'],
+    },
+    {
+        name: 'crazy Pizza',
+        price: 30,
+        category: 'entree',
+        popularity: 8.99,
+        rating: 9.6,
+        tags: [' crazy cheesy, super yummy, extra doughy, no Pizza'],
+    },
+    {
+        name: 'Extra Cheese',
+        price: 45,
+        category: 'entree',
+        popularity: 8.5,
+        rating: 10,
+        tags: [' lovely cheesy, not so yummy, not doughy, Pizza'],
+    },
+    {
+        name: 'Super Extra cheese',
+        price: 65,
+        category: 'appetizer',
+        popularity: 8.3,
+        rating: 10,
+        tags: ['cheesy less', 'yummy less', 'doughy less', 'appetizer'],
+    }
+];
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -122,8 +152,9 @@ let foodArr = {
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(callback(tags['food, meat, dough, minerals']), 'food')
+const filteredFood = foodArr.filter((food) => food.tags.includes('appetizer'));
 
+console.log(filteredFood);
 
 
 //////////////////PROBLEM 5////////////////////
@@ -166,7 +197,19 @@ const filteredFood = foodArr.filter(callback(tags['food, meat, dough, minerals']
 */
 
 
-
+const filterByProperty = (property, number, type) => {
+    let filteredFood
+    if (type === 'above') {
+        filteredFood = foodArr.filter((food) => {
+            return food[property] > number
+        });
+    } else if (type === 'below') {
+        return foodArr.filter((food) => {
+            return food[property] < number
+        });
+    }
+    return filteredFood
+};
 
 /*
     Invoke the `filterByProperty` function passing
@@ -176,3 +219,4 @@ const filteredFood = foodArr.filter(callback(tags['food, meat, dough, minerals']
 */
 
 //CODE HERE
+console.log(filterByProperty('popularity', 8.6, 'above'))

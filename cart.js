@@ -35,8 +35,12 @@ const cart = [{
 
 
 //this took me to long to figure out idk
+
 const summedPrice = cart.reduce(function(acc, obj) { return acc + obj.price }, 0);
 console.log(result)
+
+// const reducer = (accumulator, currentValue) => accumulator + currentValue.price
+// const summedPrice = cart.reduce(reducer)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -122,3 +126,5 @@ const customers = [{
         Cost: 80.99
     }
 ]
+
+c

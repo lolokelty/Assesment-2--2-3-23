@@ -52,16 +52,18 @@ console.log(`Welcome Back ${userName}!!!`)
         // `You're in our delivery zone!`
 */
 
-// const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
+const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 function canWeDeliver(zipCode) {
-    if (0, 4 === true) {
-        return "You're in our delivery zone!"
-    } else {
-        return "Sorry, we can't deliver to that address"
+    for (let i = 0; i < deliveryAreaZipCodes.length; i++) {
+        if (i === 0) {
+            return "You're in our delivery zone!"
+        } else {
+            return "Sorry, we can't deliver to that address"
+        }
     }
 }
-
+console.log(85205)
 
 /* 
     Problem 2 Continued
@@ -83,7 +85,7 @@ function canWeDeliver(zipCode) {
 const ZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 function canWeDeliverTwo(zipCode) {
-    if (deliveryAreaZipCodes.includes.array.length) {
+    if (deliveryAreaZipCodes.includes(zipCode)) {
         return "You're in our delivery zone!"
     } else {
         return "Sorry, we can't deliver to that address"
@@ -91,19 +93,20 @@ function canWeDeliverTwo(zipCode) {
 }
 
 let zipCode = (85205)
-console.log(canWeDeliverTwo)
-    //////////////////PROBLEM 3////////////////////
-    /* 
-        Below is an array of objects that have some
-        information about a couple of deals that are
-        available at the restaurant currently. 
+console.log(canWeDeliverTwo(zipCode))
 
-        You are going to access the object's properties 
-        and change some values. Don't edit the array 
-        directly, let's use the `replace` method.
+//////////////////PROBLEM 3////////////////////
+/* 
+    Below is an array of objects that have some
+    information about a couple of deals that are
+    available at the restaurant currently. 
 
-        Read on for more instructions.
-    */
+    You are going to access the object's properties 
+    and change some values. Don't edit the array 
+    directly, let's use the `replace` method.
+
+    Read on for more instructions.
+*/
 
 const deals = [{
         title: '15% Off!',
@@ -111,9 +114,9 @@ const deals = [{
     },
     {
         title: 'Free Kids Meal with 2 Regular Entrees',
-        desc: 'This deal lasts until the end of March!'
-    }
-]
+        desc: '  This deal lasts until the end of March! ',
+    },
+];
 
 /*
     The owner has decided to take the 15% off
@@ -123,8 +126,7 @@ const deals = [{
     to be itself, but use the `replace` method
     to replace the 15 with a 10.
 */
-const title = '15% Off!'
-console.log(title.replace('15% Off!', '10% Off!'))
+deals[0].title.replace('15', '10');
 
 
 
@@ -141,5 +143,4 @@ console.log(title.replace('15% Off!', '10% Off!'))
     to be displaying wrong on the live site.
 */
 
-const desc = 'This deal lasts until the end of March!'
-console.log(desc.replace('This deal lasts until the end of March!', 'This deal lasts until the end of April!'))
+console.log(deals[1].desc.replace('March', 'April').trim());

@@ -19,14 +19,16 @@
     stored on the object.
 */
 
-class employee {
+class Employee {
     constructor(name, shifts) {
         this.name = name;
         this.shifts = shifts;
     }
-}
 
-let getSchedule = new employee("Logan", "M, T, F");
+    getSchedule() {
+        console.log(`[NAME] works on these shifts ${this.shifts}`)
+    }
+}
 
 
 /*
@@ -39,20 +41,14 @@ let getSchedule = new employee("Logan", "M, T, F");
     shifts: weekday mornings, weekday afternoons
 */
 
-class empOne {
-    constructor(name, shifts) {
-        this.name = name;
-        this.shifts = shifts;
-    }
-}
-
+let empOne = new Employee('Jess', 'weekday mornings, weekday afternoons');
 
 
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
-let getSchedule2 = new empOne("jesse", "wed, thur, sat, sun")
+empOne.getSchedule()
 
 
 /*
@@ -68,8 +64,8 @@ let getSchedule2 = new empOne("jesse", "wed, thur, sat, sun")
 */
 
 
-
-
+const empTwo = {...empOne, name: 'Nick' }
+empTwo.name = 'Nick';
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -94,10 +90,18 @@ let getSchedule2 = new empOne("jesse", "wed, thur, sat, sun")
     the employees array. 
 */
 
-class Manager extends employee {
-    constructor() {
-        super();
+class Manager extends Employee {
+    constructor(name, shifts, employees) {
+        super(name, shifts);
+        this.employees = employees
+    }
 
+    getEmployees() {
+        console.log(`${this.name} manages ${this.employee}`)
+    }
+
+    addEmployee(emp) {
+        this.employees.push(emp)
     }
 }
 
@@ -114,8 +118,8 @@ class Manager extends employee {
     employees: Cece and Schmidt
 */
 
-//CODE HERE
-
+const manager = new Manager('Winston', 'weekday mornings, weekday afternoons', ['Cece', 'Schmidt'])
+console.log(manager)
 
 /*
     Call the `getEmployees` method on the
@@ -123,6 +127,7 @@ class Manager extends employee {
 */
 
 //CODE HERE
+manager.getEmployees()
 
 /*
     Call the `addEmployee` method on the 
@@ -131,6 +136,7 @@ class Manager extends employee {
 */
 
 //CODE HERE 
+manager.addEmployee('Coach')
 
 /*
     Call the `getEmployees` method on the
@@ -139,3 +145,4 @@ class Manager extends employee {
 */
 
 //CODE HERE
+manager.getEmployees()
