@@ -26,10 +26,11 @@ class Employee {
     }
 
     getSchedule() {
-        console.log(`[NAME] works on these shifts ${this.shifts}`)
+        console.log(`${this.name} works on these shifts ${this.shifts}`)
     }
 }
 
+console.log(getSchedule)
 
 /*
     Create a new instance of your class.
@@ -101,7 +102,7 @@ class Manager extends Employee {
     }
 
     addEmployee(emp) {
-        this.employees.push(emp)
+        console.log(this.employees.push(emp))
     }
 }
 
